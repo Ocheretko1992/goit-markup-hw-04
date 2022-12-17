@@ -4,6 +4,7 @@
   --paragraph-color: #434455;
   --interactive-color: #4d5ae5;
   --color-logo: #f4f4fd;
+  --logo-company: #8E8F99;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -69,9 +70,10 @@ button {
   column-gap: 24px;
 }
 .list-of-benefits {
-  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  padding: 24px 100px;
   background-color: var(--color-logo);
   border-radius: 4px;
   margin-bottom: 8px;
@@ -167,9 +169,6 @@ button {
   border-radius: 4px;
   min-width: 172px;
   max-height: 51px;
-  border-color: var(--interactive-color);
-  border-right: var(--interactive-color);
-  border-bottom: var(--interactive-color);
 }
 /* //HERO */
 
@@ -183,10 +182,7 @@ button {
   display: flex;
   column-gap: 24px;
 }
-.paragraf-text {
-  width: 264px;
-  margin-bottom: 12px;
-}
+
 .section-doing {
   padding-bottom: 120px;
   padding-top: 120px;
@@ -255,24 +251,20 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #8E8F99;
   width: 168px;
   height: 88px;
-  border: 1px solid #8E8F99;
+  border: 1px solid var(--logo-company);
   border-radius: 4px;
 }
 .logo-company {
-  padding: 16px 32px;
-  width: 100%;
-  height: 100%;
-  fill: #8e8f99;
+  width: 104px;
+  height: 56px;
+  fill: inherit;
 }
 .castomers-link:hover,
 .castomers-link:focus {
-  border: 1px solid var(--interactive-color);
-  color: var(--brand-color);
-}
-.logo-company:hover,
-.logo-company:focus {
+  border-color: var(--interactive-color);
   fill: var(--interactive-color);
 }
 
@@ -312,14 +304,12 @@ button {
   text-align: center;
 }
 .footer-pages {
-  display: flex;
   color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  justify-content: flex-start;
 }
 .footer-item {
   display: flex;
@@ -456,17 +446,14 @@ header{
   letter-spacing: 0.04em;
   background-color: var(--interactive-color);
   color: var(--brand-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:hover,
 .button:focus {
-  background-color: #4d5ae5;
-  border-top: #4d5ae5;
-  border-left: #4d5ae5;
+  background-color: #404BBF;
 }
-.button:active {
-  background-color: #404bbf;
-  border-color: #404bbf;
-}
+
 /* //HERO */
 
 /* Lists */
@@ -590,6 +577,8 @@ header{
   border-right: var(--interactive-color);
   border-bottom: var(--interactive-color);
   border-left: var(--interactive-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 .paragraf-text-portfolio {
   color: var(--paragraph-color);
