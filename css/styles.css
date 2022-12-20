@@ -11,10 +11,6 @@ body {
   background-color: #ffffff;
   color: #2e2f42;
 }
-/* reset styles */
-/* section{
-  padding-top: 120px;
-} */
 h1,
 h2,
 h3,
@@ -61,10 +57,13 @@ button {
 .contacts-menu {
   display: flex;
 }
-.menu-item:not(:last-child) {
-  margin-right: 40px;
-}
+
 .menu {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.menu-paragraf {
   display: flex;
   justify-content: space-between;
   column-gap: 24px;
@@ -89,10 +88,6 @@ button {
   padding-bottom: 24px;
 }
 
-/* .btn-portfolio{
-  padding-top: 96px;
-  padding-bottom: 72px;
-} */
 .clik-portfolio {
   display: flex;
 }
@@ -302,6 +297,7 @@ button {
   text-align: center;
 }
 .footer-pages {
+  display: flex;
   color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
@@ -406,6 +402,8 @@ header{
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
   text-decoration: none;
+}
+.menu-link-hed{
   margin-right: 40px;
 }
 .menu-link-contact {
@@ -426,9 +424,7 @@ header{
 }
 /* <!--//Site header--> */
 /* HERO */
-.hero-sectoin {
-  background-color: var(--secondary-color);
-}
+
 .hero {
   color: var(--brand-color);
   font-weight: 700;
@@ -479,10 +475,15 @@ header{
 }
 .paragraf-text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: var(--paragraph-color);
+  margin-bottom: 12px;
 }
+/* .hidden-paragraf{
+  width: 264px;
+} */
 .team {
   background: #f4f4fd;
 }
@@ -561,10 +562,6 @@ header{
   color: var(--interactive-color);
   border-color: var(--color-logo);
   border: 1px solid #e7e9fc;
-  /* border-top: var(--color-logo);
-  border-right: var(--color-logo);
-  border-bottom: var(--color-logo);
-  border-left: var(--color-logo); */
 }
 .all-buttons:hover,
 .all-buttons:focus {
